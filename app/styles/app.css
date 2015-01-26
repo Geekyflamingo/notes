@@ -1,3 +1,71 @@
-html, body {
-  margin: 20px;
+@import url('//fonts.googleapis.com/css?family=Satisfy');
+
+body{background:#000;}
+
+.lasvegas {
+  font-family: Satisfy, cursive;
+  font-size: 100px;
+  border: none;
+  color: transparent;
+  text-align: center;
+  text-shadow:
+    0 0 2px rgba(255,255,255,1),
+    0 0 10px rgba(255,255,255,1),
+    0 0 20px rgba(255,255,255,1),
+    0 0 30px rgba(255,255,255,1),
+    0 0 40px #ff00de,
+    0 0 70px #ff00de,
+    0 0 80px #ff00de,
+    0 0 100px #ff00de;
+  margin-top: 100px;
+}
+
+*,:after,:before{
+  box-sizing:border-box
+}
+
+body,html{
+
+  color:#fff}
+
+hr{
+  width:100%
+}
+
+textarea{
+  padding:20px;
+  border:1px solid #000
+}
+
+textarea:focus{
+  border:1px solid #ff0;outline:0
+}
+
+.container{
+  max-width:960px;margin:0 auto
+}
+
+.note,textarea{
+  width:48.916667%;min-height:100px;float:left
+}
+
+.note-preview .note,.note:nth-of-type(even){
+  margin-left:2.0833333333333332%
+}
+
+.note{
+  overflow:hidden;
+  background:rgba(225,225,225,.05);
+  margin-bottom:20px;padding:20px
+}
+
+.note-actions{
+  float:right
+}
+
+button{
+  background:#222;
+  color:#fff;
+  padding:5px;
+  border:1px solid #fff
 }
