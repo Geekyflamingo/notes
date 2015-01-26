@@ -115,3 +115,14 @@ button{
   margin-right:20px;
   border-radius: 5px;
 }
+
+a[href]:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.lasvegas a[href]{
+  color: transparent;
+  text-decoration: none;
+
+}
