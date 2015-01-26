@@ -91,16 +91,15 @@ textarea:focus{
 .note{
   overflow: scroll;
   background:rgba(225,225,225,.05);
-  margin-bottom:20px;
-  padding:20px;float: left;
-  &:nth-of-type(odd) {
-    float: right;
-  }
   margin-bottom: 25px;
   padding: 20px;
   border: 2px solid #ff00de;
   overflow: scroll;
   border-radius: 20px;
+  padding:20px;float: left;
+  &:nth-of-type(odd) {
+    float: right;
+  }
 }
 .note-actions{
   float:right
