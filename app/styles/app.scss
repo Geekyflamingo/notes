@@ -18,6 +18,7 @@ body{background:#000;}
     0 0 80px #B10EED,
     0 0 100px #B10EED;
   margin-top: 100px;
+  transition: 1s ease;
 }
 
 *, :after, :before {
@@ -177,4 +178,17 @@ a[href]:hover {
       0 0 80px #B10EED,
       0 0 100px #B10EED;
   }
+}
+
+.lasvegas:hover{
+  transform: scale(1.2);
+  text-shadow:
+    0 0 2px rgba(255,255,255,1),
+    0 0 10px rgba(255,255,255,1),
+    0 0 20px rgba(255,255,255,1),
+    0 0 30px rgba(255,255,255,1),
+    0 0 40px #ff00de,
+    0 0 70px #ff00de,
+    0 0 80px #ff00de,
+    0 0 100px #ff00de;
 }
