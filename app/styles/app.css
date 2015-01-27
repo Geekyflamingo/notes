@@ -85,7 +85,7 @@ textarea:focus{
 }
 
 .input-preview .note,.note:nth-of-type(even){
-  margin-left:2.0833333333333332%
+  margin-left:2.0833333333333332%;
 }
 
 .note{
@@ -97,10 +97,8 @@ textarea:focus{
   overflow: scroll;
   border-radius: 20px;
   padding:20px;float: left;
-  &:nth-of-type(odd) {
-    float: right;
-  }
 }
+
 .note-actions{
   float:right
 }
