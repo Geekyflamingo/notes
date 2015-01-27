@@ -39,8 +39,9 @@ section.input {
 .input-body {
   float: left;
   height: 100%;
-  border: 1px solid #222;
+  border: 1px solid #B10EED;
   padding: 20px;
+  border-radius: 20px;
 }
 
 .input-preview {
@@ -50,6 +51,7 @@ section.input {
   padding: 20px;
   border: 2px dashed #B10EED;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 section.notes {
@@ -65,11 +67,6 @@ hr{
   width:100%
 }
 
-textarea{
-  padding:20px;
-  border:1px solid #000;
-  border-radius: 20px;
-}
 
 textarea:focus{
   border:1px solid #B10EED;
@@ -94,7 +91,7 @@ textarea:focus{
   margin-bottom: 25px;
   padding: 20px;
   border: 2px solid #B10EED;
-  overflow: scroll;
+  overflow: hidden;
   border-radius: 20px;
   padding:20px;float: left;
 }
