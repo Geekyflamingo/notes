@@ -4,20 +4,25 @@ export default Ember.ArrayController.extend({
   actions: {
     newNote: function() {
       var body = this.get('noteCopy');
+      var title = this.get('titleCopy');
 
-      if (body.trim()) {
-        var note = this.store.createRecord('note', { body: body });
-        note.save();
+      if (body && title && body.trim() && title.trim()) {
+        var note = this.store.createRecord('note', { title: title, body: body });
+        note.save().then(function(){
+          this.flashMessage('succes', 'Your note has been saved!');
+        }.bind(this));
       }
+      this.set('titleCopy', '');
       this.set('noteCopy', '');
     },
 
-    deleteNote: function(id) {
-      var self = this;
+    deleteNote: function (id) {
       this.store.find('note', id).then(function(note) {
         note.deleteRecord();
-        note.save();
-        });
-      }
+        note.save().then(function(){
+          this.flashMessage('success', 'Your note has been deleted!');
+        }.bind(this));
+      }.bind(this));
     }
+  }
 });

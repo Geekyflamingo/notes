@@ -1,20 +1,26 @@
 
 <section class='input'>
-  {{textarea placeholder="Add a note!" class="input-body"
-    value=noteCopy action='newNote' autofocus='true'}}
+  <div class="input-form">
+    {{textarea placeholder="Add a title!" class="input-title" property="stuff" value=titleCopy}}
+    <div class = 'note_body'>
+      {{textarea placeholder="Add a note!" class="input-body" value=noteCopy action='newNote' autofocus='true'}}
+    </div>
+    <section class  = "note-actions">
+      <button {{action 'newNote'}}>Save Note</button>
+    </section>
+  </div>
   <div class='input-preview'>
+    <h2>{{titleCopy}}</h2>
     {{noteCopy}}
   </div>
-  <section class  = "note-actions">
-    <button {{action 'newNote'}}>Save Note</button>
-  </section>
 </section>
 
 <section class='notes'>
   {{#each note in model}}
     <div class='note'>
+      <h2>{{note.title}}</h2>
+      <p>{{note.body}}</p>
       <button class="delete-button" {{action 'deleteNote' note.id}}>Delete</button>
-      {{note.body}}
     </div>
   {{/each}}
 </section>
