@@ -6,6 +6,9 @@
       {{textarea placeholder="Add a note!" class="input-body" value=noteCopy action='newNote' autofocus='true'}}
     </div>
     <section class  = "note-actions">
+      <div class="flash-message">
+        <h2>{{message-queue}}</h2>
+      </div>
       <button {{action 'newNote'}}>Save Note</button>
     </section>
   </div>

@@ -29,13 +29,16 @@ html, body {
   background: #000;
   color: #FBF5F3;
   font-family: 'Satisfy';
-  font-size: 20px;
+  font-size: 30px;
 }
 
 section.input {
   width: 100%;
   min-height: 160px;
   overflow: hidden;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .input-form {
@@ -84,6 +87,8 @@ section.notes {
   border-top: 1px solid #B10EED;
   clear: both;
   overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -126,15 +131,15 @@ button{
   background:#000;
   color:#fff;
   font-family: 'Satisfy', cursive;
-  font-size: 20px;
-  padding:5px;
-  border:1px solid #fff;
-  margin-right:20px;
+  font-size: 40px;
+  padding:10px;
+  border:1px solid #B10EED;
   border-radius: 5px;
 }
 
 .delete-button{
   margin: 5px;
+  font-size: 20px;
 }
 
 a[href]:hover {
@@ -214,18 +219,14 @@ a[href]:hover {
     0 0 100px #ff00de;
 }
 
-/* .flash-message {
+.flash-message {
   text-align: center;
 }
 
 .flash_messages-success {
-  background: green;
+  color: #B10EED;
 }
 
 .flash_messages-type {
   visibility: hidden;
 }
-
-.flash_messages-content {
-  padding-bottom: 20px;
-} */

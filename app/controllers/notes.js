@@ -9,7 +9,7 @@ export default Ember.ArrayController.extend({
       if (body && title && body.trim() && title.trim()) {
         var note = this.store.createRecord('note', { title: title, body: body });
         note.save().then(function(){
-          this.flashMessage('succes', 'Your note has been saved!');
+          this.flashMessage('success', 'Your note has been saved!');
         }.bind(this));
       }
       this.set('titleCopy', '');
