@@ -1,3 +1,87 @@
+
+@-webkit-keyframes blinkhover {
+  0%   { }
+  50%  {}
+  60%{
+    text-shadow:
+      0 0 2px rgba(255, 255, 255, .1),
+      0 0 10px rgba(255, 255, 255, .4);
+
+    text-stroke: 2px rgba(255,255,255,0.05);
+  }
+  70%{
+    text-shadow:
+      0 0 2px rgba(255,255,255,1),
+      0 0 10px rgba(255,255,255,1),
+      0 0 20px rgba(255,255,255,1),
+      0 0 30px rgba(255,255,255,1),
+      0 0 40px #ff00de,
+      0 0 70px #ff00de,
+      0 0 80px #ff00de,
+      0 0 100px #ff00de;
+  }
+  80%{
+    text-shadow:
+      0 0 2px rgba(255, 255, 255, .1),
+      0 0 10px rgba(255, 255, 255, .4);
+
+    text-stroke: 2px rgba(255,255,255,0.05);
+  }
+  100% {
+    text-shadow:
+      0 0 2px rgba(255,255,255,1),
+      0 0 10px rgba(255,255,255,1),
+      0 0 20px rgba(255,255,255,1),
+      0 0 30px rgba(255,255,255,1),
+      0 0 40px #ff00de,
+      0 0 70px #ff00de,
+      0 0 80px #ff00de,
+      0 0 100px #ff00de;
+  }
+}
+
+@-webkit-keyframes blink {
+  0%   { }
+  50%  {}
+  60%{
+    text-shadow:
+      0 0 2px rgba(255, 255, 255, .1),
+      0 0 10px rgba(255, 255, 255, .4);
+
+    text-stroke: 2px rgba(255,255,255,0.05);
+  }
+  70%{
+    text-shadow:
+      0 0 2px rgba(255,255,255,1),
+      0 0 10px rgba(255,255,255,1),
+      0 0 20px rgba(255,255,255,1),
+      0 0 30px rgba(255,255,255,1),
+      0 0 40px #B10EED,
+      0 0 70px #B10EED,
+      0 0 80px #B10EED,
+      0 0 100px #B10EED;
+  }
+  80%{
+    text-shadow:
+      0 0 2px rgba(255, 255, 255, .1),
+      0 0 10px rgba(255, 255, 255, .4);
+
+    text-stroke: 2px rgba(255,255,255,0.05);
+  }
+  100% {
+    text-shadow:
+      0 0 2px rgba(255,255,255,1),
+      0 0 10px rgba(255,255,255,1),
+      0 0 20px rgba(255,255,255,1),
+      0 0 30px rgba(255,255,255,1),
+      0 0 40px #B10EED,
+      0 0 70px #B10EED,
+      0 0 80px #B10EED,
+      0 0 100px #B10EED;
+  }
+}
+
+
 @import url('//fonts.googleapis.com/css?family=Satisfy');
 
 body{background:#000;}
@@ -37,8 +121,8 @@ section.input {
   min-height: 160px;
   overflow: hidden;
   padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .input-form {
@@ -87,8 +171,8 @@ section.notes {
   border-top: 1px solid #B10EED;
   clear: both;
   overflow: hidden;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
@@ -105,6 +189,10 @@ textarea:focus{
   width:48.916667%;
   font-family: 'Satisfy', cursive;
   font-size: 20px;
+}
+
+textarea{
+    resize: none;
 }
 
 .input-preview .note,.note:nth-of-type(even){
@@ -124,10 +212,11 @@ textarea:focus{
 }
 
 .note-actions{
-  float:right
+  overflow: hidden;
 }
 
 button{
+  float: right;
   background:#000;
   color:#fff;
   font-family: 'Satisfy', cursive;
@@ -152,6 +241,7 @@ a[href]:hover {
   text-decoration: none;
 }
 
+
 .lasvegas span{
   -webkit-animation: blink 1.5s infinite alternate;
 }
@@ -163,46 +253,15 @@ a[href]:hover {
   -webkit-cubic-bezier: (0.5, 0.2, 0.3, 1.0);
 }
 
+.lasvegas:hover span {
+  -webkit-animation: blinkhover 1.5s infinite alternate;
+}
 
-@-webkit-keyframes blink {
-  0%   { }
-  50%  {}
-  60%{
-    text-shadow:
-      0 0 2px rgba(255, 255, 255, .1),
-      0 0 10px rgba(255, 255, 255, .4);
-
-    text-stroke: 2px rgba(255,255,255,0.05);
-  }
-  70%{
-    text-shadow:
-      0 0 2px rgba(255,255,255,1),
-      0 0 10px rgba(255,255,255,1),
-      0 0 20px rgba(255,255,255,1),
-      0 0 30px rgba(255,255,255,1),
-      0 0 40px #B10EED,
-      0 0 70px #B10EED,
-      0 0 80px #B10EED,
-      0 0 100px #B10EED;
-  }
-  80%{
-    text-shadow:
-      0 0 2px rgba(255, 255, 255, .1),
-      0 0 10px rgba(255, 255, 255, .4);
-
-    text-stroke: 2px rgba(255,255,255,0.05);
-  }
-  100% {
-    text-shadow:
-      0 0 2px rgba(255,255,255,1),
-      0 0 10px rgba(255,255,255,1),
-      0 0 20px rgba(255,255,255,1),
-      0 0 30px rgba(255,255,255,1),
-      0 0 40px #B10EED,
-      0 0 70px #B10EED,
-      0 0 80px #B10EED,
-      0 0 100px #B10EED;
-  }
+.lasvegas:hover span.delay{
+  -webkit-animation-duration:4s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+  -webkit-cubic-bezier: (0.5, 0.2, 0.3, 1.0);
 }
 
 
@@ -221,6 +280,7 @@ a[href]:hover {
 
 .flash-message {
   text-align: center;
+  float: left;
 }
 
 .flash_messages-success {
@@ -228,5 +288,9 @@ a[href]:hover {
 }
 
 .flash_messages-type {
-  visibility: hidden;
+  display: none;
+}
+
+.flash-messages-message {
+  margin: 0;
 }

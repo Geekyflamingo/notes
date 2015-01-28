@@ -9,7 +9,7 @@ export default Ember.ArrayController.extend({
       if (body && title && body.trim() && title.trim()) {
         var note = this.store.createRecord('note', { title: title, body: body });
         note.save().then(function(){
-          this.flashMessage('success', 'Your note has been saved!');
+          this.flashMessage('success', 'Your note has been saved!', 1000);
         }.bind(this));
       }
       this.set('titleCopy', '');
@@ -20,7 +20,7 @@ export default Ember.ArrayController.extend({
       this.store.find('note', id).then(function(note) {
         note.deleteRecord();
         note.save().then(function(){
-          this.flashMessage('success', 'Your note has been deleted!');
+          this.flashMessage('success', 'Your note has been deleted!', 1000);
         }.bind(this));
       }.bind(this));
     }
