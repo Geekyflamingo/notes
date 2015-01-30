@@ -20,7 +20,7 @@
 
 <section class='notes'>
   {{#each note in model}}
-    {{local-note title=note.title body=note.body note=note deleteNote="deleteNote"}}
+    {{local-note note=note deleteNote="deleteNote"}}
 
   {{/each}}
 </section>
