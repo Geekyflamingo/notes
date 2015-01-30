@@ -5,8 +5,8 @@ export default Ember.Component.extend({
   classNames: ['note'],
 
   actions: {
-    deleteNote: function(remove) {
-      this.sendAction('deleteNote', remove);
+    deleteNote: function(note) {
+      this.sendAction('deleteNote', note);
     }
   }
 });
