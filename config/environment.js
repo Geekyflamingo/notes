@@ -61,7 +61,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiURL = 'https://make-me-notes.herokuapp.com/';
+    ENV.apiURL = 'https://afternoon-savannah-4310.herokuapp.com';
   }
 
   return ENV;
