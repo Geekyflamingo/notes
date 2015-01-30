@@ -20,7 +20,7 @@ export default Ember.ArrayController.extend({
       note.deleteRecord();
       note.save().then(function(){
         this.flashMessage('success', 'Your note has been deleted!', 1000);
-      };
+      }
     }
   }
 });
